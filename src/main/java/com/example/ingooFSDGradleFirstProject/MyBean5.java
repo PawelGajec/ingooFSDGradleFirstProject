@@ -3,6 +3,7 @@ package com.example.ingooFSDGradleFirstProject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+
 @Component
 public class MyBean5 {
     @Autowired
@@ -35,3 +36,4 @@ public class MyBean5 {
       myBean4.soutHello();
    }
 }
+

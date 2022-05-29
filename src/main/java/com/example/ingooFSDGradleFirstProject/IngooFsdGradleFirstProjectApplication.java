@@ -16,15 +16,18 @@ public class IngooFsdGradleFirstProjectApplication  implements CommandLineRunner
 
 	public static void main(String[] args) {
 		SpringApplication.run(IngooFsdGradleFirstProjectApplication.class, args);
-		System.out.println("gggg");
-	}
 
+	}
 
 	@Override
 	public void run(String... args) throws Exception {
+		MyChildService myChildService = (MyChildService) applicationContext.getBean("myChildService1");
+		myChildService.sayHello();
+		MyChildService myChildService2 = (MyChildService) applicationContext.getBean("myChildService2");
+		myChildService2.sayHello();
 
-		MyBean5 bean = applicationContext.getBean(MyBean5.class);
-		bean.soutHello();
 
 	}
 }
+
+
